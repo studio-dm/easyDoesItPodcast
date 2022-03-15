@@ -1,0 +1,35 @@
+.rssContainer{
+    width: 800px;
+    margin:auto;
+    padding-bottom:20px;
+    display:none;
+}
+.rssContainer:nth-of-type(1){
+display:block;
+}
+
+.image{
+    width:200px;
+    float:left;
+}
+.image img{
+    width:200px;
+    height:200px;
+    padding-right:15px;
+}
+.text{
+    padding-bottom:15px;
+}
+
+#myheader{
+    width:100%;
+    height:400px;
+    background-size: cover;
+    background-position:center;
+    opacity:0.3;
+}
+#myheader nav{
+    opacity: 1;
+    z-index: 9999;
+}
+ 
