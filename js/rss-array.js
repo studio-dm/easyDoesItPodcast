@@ -5,7 +5,7 @@ function formatPubDate(pub) {
     if (isNaN(d)) return pub; // fallback if unparseable
 
     // en-GB gives Day Month Year order; month: 'long' gives full month name
-    return new Intl.DateTimeFormat('en-GB', {
+    return new Intl.DateTimeFormat('en-US', {
       day: '2-digit',
       month: 'long',
       year: 'numeric'
