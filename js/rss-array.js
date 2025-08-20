@@ -1,4 +1,17 @@
 const RSS_URL = `https://anchor.fm/s/74a1080/podcast/rss`;
+//NEW FUNCTION 8/20/2025
+function formatPubDate(pub) {
+    const d = new Date(pub); // handles RFC 822/2822 (typical RSS) and ISO 8601
+    if (isNaN(d)) return pub; // fallback if unparseable
+
+    // en-GB gives Day Month Year order; month: 'long' gives full month name
+    return new Intl.DateTimeFormat('en-GB', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric'
+    }).format(d);
+  }
+//END NEW FUNCTION
 $.ajax(RSS_URL, {
   accepts: {
     xml: "application/rss+xml"
@@ -16,12 +29,15 @@ $.ajax(RSS_URL, {
         //Video Modal 
         let vidText  = `<small>By ${author}<span class="sep"> | </span>${category} </small>`;
         let vidSummary = `${$(data).find("channel>itunes\\3Asummary").text()}`
+        const pubDate1 = $(myitems[0]).find("pubDate").text();
+        const prettyDate = formatPubDate(pubDate1);
     
         $("#author").text(author+" Podcast");
         $("#mainEpisode").html($(myitems[0]).find("title").text());
         $("#player21_html5").attr("src",  rssSource );
         $(".myauthor").text(author);
-        $(".pubdate").text($(myitems[0]).find("pubDate").text())
+        //$(".pubdate").text($(myitems[0]).find("pubDate").text())
+        $(".pubdate").text(prettydate);
         
         //Video modal
         $("#vidText").html(vidText);
