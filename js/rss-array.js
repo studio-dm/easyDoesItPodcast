@@ -2,7 +2,7 @@ const RSS_URL = `https://anchor.fm/s/74a1080/podcast/rss`;
 //NEW FUNCTION 8/20/2025
 function formatPubDate(pub) {
     const d = new Date(pub); // handles RFC 822/2822 (typical RSS) and ISO 8601
-    if (isNaN(d)) return pub; // fallback if unparseable
+    //if (isNaN(d)) return pub; // fallback if unparseable
 
     // en-GB gives Day Month Year order; month: 'long' gives full month name
     return new Intl.DateTimeFormat('en-GB', {
