@@ -60,7 +60,7 @@ $.ajax(RSS_URL, {
             <div class="row rowborders">
               <div class="col-lg-2 mb-3 col-sm-12">
               <img class="myimage2 image" src='${modalImage}');>
-              <a href="#mainTop" id="btn-play" class="btn small playpad" rel="${rssSource2}" title="${modalTitle}" alt="${modalPubDate}"><span class="icon-play"></span> <span> Play</span></a>
+              <a href="#mainTop" id="btn-play" class="btn small playpad" rel="${rssSource2}" title="${modalTitle}" alt="${modalPrettyDate}"><span class="icon-play"></span> <span> Play</span></a>
             </div>
         <div class="col-lg-10 col-sm-12">
         <h5 class="font-weight-light head5">${modalTitle}</h5>
