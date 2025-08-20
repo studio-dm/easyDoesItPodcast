@@ -37,7 +37,7 @@ $.ajax(RSS_URL, {
         $("#player21_html5").attr("src",  rssSource );
         $(".myauthor").text(author);
         //$(".pubdate").text($(myitems[0]).find("pubDate").text())
-        $(".pubdate").text(prettydate);
+        $(".pubdate").text(prettyDate);
         
         //Video modal
         $("#vidText").html(vidText);
