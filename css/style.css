@@ -596,7 +596,8 @@ a {
         width: calc(100% - 300px); } }
 
 .mejs__container {
-  width: 100% !important; }
+  width: 100% !important;
+background: transparent !important;}
 
 @media (max-width: 991.98px) {
   .display-4 {
