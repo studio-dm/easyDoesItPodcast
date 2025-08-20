@@ -51,6 +51,7 @@ $.ajax(RSS_URL, {
         let modalTitle = $(myitems[i]).find("title").text();
         let modalPubDate = $(myitems[i]).find("pubDate").text()
         let modalImage = $(myitems[i]).find("itunes\\3Aimage").attr("href")
+        let modalPrettyDate = formatPubDate(modalPubDate);
 
         
 
@@ -63,7 +64,7 @@ $.ajax(RSS_URL, {
             </div>
         <div class="col-lg-10 col-sm-12">
         <h5 class="font-weight-light head5">${modalTitle}</h5>
-        <div class="text-white mb-3"><span class="text-black-opacity-06"><small>By ${author}<span class="sep"> |</span>${modalPubDate} </small></span></div>
+        <div class="text-white mb-3"><span class="text-black-opacity-06"><small>By ${author}<span class="sep"> | </span>${modalPrettyDate} </small></span></div>
         <div class="smaller">${shortText}</div>
 
         </div>
