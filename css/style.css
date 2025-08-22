@@ -449,7 +449,7 @@ a {
       background: rgba(0, 0, 0, 0.4); }
   .site-blocks-cover .player {
     position: absolute;
-    bottom: -250px;
+    bottom: -200px;
     width: 100%; }
   .site-blocks-cover, .site-blocks-cover .row {
     min-height: 600px;
