@@ -25,13 +25,15 @@
       display: block;
       flex-direction: column;
       gap: 10px;
+      margin-top:5px;
     }
 
     .share-menu a {
-      padding: 1px 2px;
-      font-size:34px;
+      
+      padding: 10px 2px;
+      font-size:30px;
       border-radius: 8px;
-      color: rgb(6, 6, 7);
+      color: rgb(253, 253, 255);
       font-weight: bold;
       text-decoration: none;
       width: 160px;
