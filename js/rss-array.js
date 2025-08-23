@@ -33,7 +33,7 @@ $.ajax(RSS_URL, {
         const prettyDate = formatPubDate(pubDate1);
     
         $("#author").text(author+" Podcast");
-        $("#mainEpisode").html($(myitems[0]).find("title").text());
+        $("#mainEpisode").html("Episode: "+ $(myitems[0]).find("title").text());
         $("#player21_html5").attr("src",  rssSource );
         $(".myauthor").text(author);
         //$(".pubdate").text($(myitems[0]).find("pubDate").text())
@@ -77,7 +77,7 @@ $.ajax(RSS_URL, {
           let strTitle=$(this).attr("title");
           let strPubdate=$(this).attr("alt");
           $("#player21_html5").attr("src",  $(this).attr("rel"));
-          $("#mainEpisode").text(strTitle);
+          $("#mainEpisode").text("Episode: "+ strTitle);
           $(".pubdate").text(strPubdate);
           $("#playbtn").click();
           if($(".mejs__controls div").hasClass("mejs__button mejs__playpause-button mejs__pause")){
