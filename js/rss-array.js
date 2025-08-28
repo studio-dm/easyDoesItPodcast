@@ -129,7 +129,7 @@ $.ajax(RSS_URL, {
           event_category: "Play",
           event_label: "Play_Button",
           value: 1,
-          console.log("Hello world!");
+          console.log("Hello world!")
         });
             //End Event
           }else{
