@@ -83,7 +83,7 @@ $.ajax(RSS_URL, {
           gtag("event", "button_click", {
           event_category: "Play",
           event_label: "Play_Button",
-          value: strTitle
+          value: 1
         });
             //End Event
           $("#playbtn").click();
