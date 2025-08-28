@@ -79,11 +79,13 @@ $.ajax(RSS_URL, {
           $("#player21_html5").attr("src",  $(this).attr("rel"));
           $("#mainEpisode").text("Episode: "+ strTitle);
           $(".pubdate").text(strPubdate);
+            //GA Event
           gtag("event", "button_click", {
           event_category: "Play",
           event_label: "Play_Button",
           value: strTitle
         });
+            //End Event
           $("#playbtn").click();
           if($(".mejs__controls div").hasClass("mejs__button mejs__playpause-button mejs__pause")){
             $("#playbtn2").text("Pause");
