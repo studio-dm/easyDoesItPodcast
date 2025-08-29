@@ -127,7 +127,7 @@ $.ajax(RSS_URL, {
               //GA Event
           gtag("event", "button_click", {
           event_category: "Play",
-          event_label: "Play_Button",
+          event_label: $("#mainEpisode").text(),
           value: 1
         });
             //End Event
