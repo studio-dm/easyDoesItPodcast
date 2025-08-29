@@ -33,7 +33,7 @@ $.ajax(RSS_URL, {
         const prettyDate = formatPubDate(pubDate1);
     
         $("#author").text(author+" Podcast");
-        $("#mainEpisode").html("Episode: "+ $(myitems[0]).find("title").text());
+        $("#mainEpisode").html("Latest: "+ $(myitems[0]).find("title").text());
         $("#player21_html5").attr("src",  rssSource );
         $(".myauthor").text(author);
         //$(".pubdate").text($(myitems[0]).find("pubDate").text())
